@@ -8,17 +8,68 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to the Flower Bouquets Store</h1>
-        <nav>
-            <ul>
-                <li><a href="#category1">Roses</a></li>
-                <li><a href="#category2">Tulips</a></li>
-                <li><a href="#category3">Lilies</a></li>
-                <li><a href="#category4">Sunflowers</a></li>
-                <li><a href="#category5">Mixed Bouquets</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Flower Bouquets Store Logo"></a>
+            </div>
+
+            <!-- Navigation links -->
+            <nav>
+                <ul>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Categories</a>
+                        <div class="dropdown-content">
+                            <a href="#category1">Roses</a>
+                            <a href="#category2">Tulips</a>
+                            <a href="#category3">Lilies</a>
+                            <a href="#category4">Sunflowers</a>
+                            <a href="#category5">Mixed Bouquets</a>
+                        </div>
+                    </li>
+                    <li><a href="combo.html">Combos</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search for bouquets...">
+                <button type="submit">Search</button>
+            </div>
+
+            <!-- Login button -->
+            <div class="login-btn">
+                <a href="login.html">Login/SignUp</a>
+            </div>
+        </div>
     </header>
+
+
+    <!-- Image Slider (Product Ads) -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Example Slides (Product Ads) -->
+            <div class="slide">
+                <img src="images/rose1.jpg" alt="Red Rose Bouquet">
+                <h2>Red Rose Bouquet - $30.00</h2>
+            </div>
+            <div class="slide">
+                <img src="images/tulip1.jpg" alt="Pink Tulip Bouquet">
+                <h2>Pink Tulip Bouquet - $25.00</h2>
+            </div>
+            <div class="slide">
+                <img src="images/lily1.jpg" alt="Lily Bouquet">
+                <h2>White Lily Bouquet - $35.00</h2>
+            </div>
+            <!-- Add more slides here -->
+        </div>
+
+        <!-- Navigation for the slider -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
 
     <main>
         <!-- Category 1: Roses -->
@@ -204,5 +255,8 @@
     <footer>
         <p>© 2024 Flower Bouquets Store. All rights reserved.</p>
     </footer>
+
+    <script src="scripts.js"></script>
+
 </body>
 </html>
