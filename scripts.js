@@ -41,3 +41,51 @@ document.getElementById('switch-to-login').addEventListener('click', function (e
     document.getElementById('login-form').style.display = 'block';
     document.getElementById('register-form').style.display = 'none';
 });
+
+// cart.js or products.js
+
+// Function to get cart from localStorage or initialize a new one
+function getCart() {
+    const cart = localStorage.getItem('cart');
+    return cart ? JSON.parse(cart) : [];
+}
+
+// Function to save cart to localStorage
+function saveCart(cart) {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+// Function to add an item to the cart
+function addToCart(product) {
+    const cart = getCart();
+    
+    // Check if the item already exists in the cart
+    const existingItem = cart.find(item => item.id === product.id);
+
+    if (existingItem) {
+        // If the item exists, increment the quantity
+        existingItem.quantity += 1;
+    } else {
+        // If the item does not exist, add it to the cart
+        cart.push({ ...product, quantity: 1 });
+    }
+
+    saveCart(cart);
+    alert(`${product.name} has been added to your cart.`);
+}
+
+// Event listener to add products to the cart when "Add to Cart" button is clicked
+document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+    button.addEventListener('click', function() {
+        const card = this.closest('.product-card');
+        
+        const product = {
+            id: parseInt(card.getAttribute('data-id')),
+            name: card.getAttribute('data-name'),
+            price: parseFloat(card.getAttribute('data-price')),
+            image: card.getAttribute('data-image')
+        };
+
+        addToCart(product);
+    });
+});
