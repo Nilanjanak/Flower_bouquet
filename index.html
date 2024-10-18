@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!--Header-->
     <header>
         <div class="header-container">
             <!-- Logo -->
@@ -17,6 +18,7 @@
             <!-- Navigation links -->
             <nav>
                 <ul>
+                    <!--Adding the category list to a dropdown menu-->
                     <li class="dropdown">
                         <a href="#" class="dropbtn">Categories</a>
                         <div class="dropdown-content">
@@ -39,6 +41,13 @@
                 <button type="submit">Search</button>
             </div>
 
+            <!--Cart button-->
+            <button class="cart-btn">
+                <a href="cart.html"><img src="images/cart-icon.png" alt="Cart Icon"></a>
+                
+                <span id="cart-count">0</span> <!-- This will dynamically show the number of items -->
+            </button>
+
             <!-- Login button -->
             <div class="login-btn">
                 <a href="login.html">Login/SignUp</a>
@@ -50,17 +59,17 @@
     <!-- Image Slider (Product Ads) -->
     <div class="slider">
         <div class="slides">
-            <!-- Example Slides (Product Ads) -->
+            <!-- Multiple Slides (Product Ads) -->
             <div class="slide">
-                <img src="images/rose1.jpg" alt="Red Rose Bouquet">
+                <img src="images/slider1.jpg" alt="Red Rose Bouquet">
                 <h2>Red Rose Bouquet - $30.00</h2>
             </div>
             <div class="slide">
-                <img src="images/tulip1.jpg" alt="Pink Tulip Bouquet">
+                <img src="images/slider2.jpg" alt="Pink Tulip Bouquet">
                 <h2>Pink Tulip Bouquet - $25.00</h2>
             </div>
             <div class="slide">
-                <img src="images/lily1.jpg" alt="Lily Bouquet">
+                <img src="images/slider3.jpg" alt="Lily Bouquet">
                 <h2>White Lily Bouquet - $35.00</h2>
             </div>
             <!-- Add more slides here -->
@@ -76,44 +85,50 @@
         <section id="category1">
             <h2>Roses Bouquets</h2>
             <div class="bouquet-grid">
-                <!-- Example Bouquet Card with Link -->
+                <!-- Rose Bouquet Card with Link -->
                 <a href="product-page/rose1.html" class="bouquet-card">
                     <img src="images/rose1.jpg" alt="Red Rose Bouquet">
                     <h3>Red Rose Bouquet</h3>
                     <p>A classic bouquet of fresh red roses.</p>
                     <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/rose2.html" class="bouquet-card">
-                    <img src="images/rose2.jpg" alt="Red Rose Bouquet">
+                    <img src="images/rose2.jpg" alt="White Rose Bouquet">
                     <h3>White Rose Bouquet</h3>
                     <p>A beautiful bouquet that symbolises health.</p>
                     <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/rose3.html" class="bouquet-card">
-                    <img src="images/rose3.jpg" alt="Red Rose Bouquet">
+                    <img src="images/rose3.jpg" alt="Pink Rose Bouquet">
                     <h3>Pink Rose Bouquet</h3>
                     <p>A beautiful bouquet that symbolises growth.</p>
                     <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/rose4.html" class="bouquet-card">
-                    <img src="images/rose4.jpg" alt="Red Rose Bouquet">
+                    <img src="images/rose4.jpg" alt="Yellow Rose Bouquet">
                     <h3>Yellow Rose Bouquet</h3>
                     <p>A beautiful bouquet that symbolises friendship.</p>
                     <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/rose5.html" class="bouquet-card">
-                    <img src="images/rose5.jpg" alt="Red Rose Bouquet">
+                    <img src="images/rose5.jpg" alt="Orange Rose Bouquet">
                     <h3>Orange Rose Bouquet</h3>
                     <p>A beautiful bouquet that symbolises empathy.</p>
                     <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/rose6.html" class="bouquet-card">
-                    <img src="images/rose6.jpg" alt="Red Rose Bouquet">
+                    <img src="images/rose6.jpg" alt="Black Rose Bouquet">
                     <h3>Black Rose Bouquet</h3>
                     <p>A beautiful bouquet that symbolises depth.</p>
                     <span class="price">$30.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
-                <!-- Repeat for 10 Bouquets -->
+                <!-- Repeat for more Bouquets -->
             </div>
         </section>
 
@@ -121,43 +136,50 @@
         <section id="category2">
             <h2>Tulip Bouquets</h2>
             <div class="bouquet-grid">
+                <!-- Tulip Bouquet Card with Link -->
                 <a href="product-page/tulip1.html" class="bouquet-card">
                     <img src="images/tulip1.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/tulip2.html" class="bouquet-card">
                     <img src="images/tulip2.jpg" alt="Pink Tulip Bouquet">
                     <h3>Yellow Tulip Bouquet</h3>
                     <p>Beautiful yellow tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/tulip3.html" class="bouquet-card">
                     <img src="images/tulip3.jpg" alt="Pink Tulip Bouquet">
                     <h3>White Tulip Bouquet</h3>
                     <p>Beautiful white tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/tulip4.html" class="bouquet-card">
                     <img src="images/tulip4.jpg" alt="Pink Tulip Bouquet">
                     <h3>Orange Tulip Bouquet</h3>
                     <p>Beautiful orange tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/tulip5.html" class="bouquet-card">
                     <img src="images/tulip5.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/tulip6.html" class="bouquet-card">
                     <img src="images/tulip6.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
-                <!-- Repeat for 10 Bouquets -->
+                <!-- Repeat for more Bouquets -->
             </div>
         </section>
 
@@ -165,43 +187,50 @@
         <section id="category2">
             <h2>Lilies Bouquets</h2>
             <div class="bouquet-grid">
+                <!-- Lily Bouquet Card with Link -->
                 <a href="product-page/lilies1.html" class="bouquet-card">
                     <img src="images/lilies1.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/lilies2.html" class="bouquet-card">
                     <img src="images/lilies2.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/lilies3.html" class="bouquet-card">
                     <img src="images/lilies3.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/lilies4.html" class="bouquet-card">
                     <img src="images/lilies4.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/lilies5.html" class="bouquet-card">
                     <img src="images/lilies5.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
                 <a href="product-page/lilies6.html" class="bouquet-card">
                     <img src="images/lilies6.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
-                <!-- Repeat for 10 Bouquets -->
+                <!-- Repeat for more Bouquets -->
             </div>
         </section>
 
@@ -209,53 +238,62 @@
         <section id="category2">
             <h2>Sunflower Bouquets</h2>
             <div class="bouquet-grid">
-                <a href="product-page/sunflower1.html" class="bouquet-card">
-                    <img src="images/sunflower1.jpg" alt="Pink Tulip Bouquet">
+                <!-- Sunflower Bouquet Card with Link -->
+                <a href="product-page/orchids1.html" class="bouquet-card">
+                    <img src="images/orchids1.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
-                <a href="product-page/sunflower2.html" class="bouquet-card">
-                    <img src="images/sunflower2.jpg" alt="Pink Tulip Bouquet">
+                <a href="product-page/orchids2.html" class="bouquet-card">
+                    <img src="images/orchids2.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
-                <a href="product-page/sunflower3.html" class="bouquet-card">
-                    <img src="images/sunflower3.jpg" alt="Pink Tulip Bouquet">
+                <a href="product-page/orchids3.html" class="bouquet-card">
+                    <img src="images/orchids3.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
-                <a href="product-page/sunflower4.html" class="bouquet-card">
-                    <img src="images/sunflower4.jpg" alt="Pink Tulip Bouquet">
+                <a href="product-page/orchids4.html" class="bouquet-card">
+                    <img src="images/orchids4.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
-                <a href="product-page/sunflower5.html" class="bouquet-card">
-                    <img src="images/sunflower5.jpg" alt="Pink Tulip Bouquet">
+                <a href="product-page/orchids5.html" class="bouquet-card">
+                    <img src="images/orchids5.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
-                <a href="product-page/sunflower6.html" class="bouquet-card">
-                    <img src="images/sunflower6.jpg" alt="Pink Tulip Bouquet">
+                <a href="product-page/orchids6.html" class="bouquet-card">
+                    <img src="images/orchids6.jpg" alt="Pink Tulip Bouquet">
                     <h3>Pink Tulip Bouquet</h3>
                     <p>Beautiful pink tulips arranged delicately.</p>
                     <span class="price">$25.00</span>
+                    <button class="add-to-cart-btn">Add to Cart</button>
                 </a>
-                <!-- Repeat for 10 Bouquets -->
+                <!-- Repeat for more Bouquets -->
             </div>
         </section>
 
-        <!-- Repeat for other 3 categories (Lilies, Sunflowers, Mixed Bouquets) -->
+        <!-- Repeat for other categories -->
     </main>
 
+    <!--Footer-->
     <footer>
         <p>© 2024 Flower Bouquets Store. All rights reserved.</p>
     </footer>
 
+    <!--JavaScript link-->
     <script src="scripts.js"></script>
 
 </body>
