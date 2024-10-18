@@ -24,7 +24,7 @@ header {
 
 /* Logo styling */
 .logo img {
-    width: 150px;
+    width: 50px;
     height: auto;
 }
 
@@ -210,6 +210,72 @@ main {
     transform: scale(1.05); /* Slight zoom on hover */
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
+
+/* Add-to-Cart button */
+.add-to-cart-btn {
+    background-color: #e91e63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+    background-color: #d81b60;
+}
+
+.add-to-cart-btn:active {
+    transform: scale(0.95); /* Shrink button slightly on click */
+    background-color: #c2185b;
+}
+
+/* Success message after adding to cart */
+.add-to-cart-success {
+    opacity: 0;
+    visibility: hidden;
+    font-size: 0.9rem;
+    color: green;
+    margin-top: 10px;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Show success message smoothly */
+.add-to-cart-success.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Style for the cart button */
+.cart-btn {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.cart-btn img {
+    width: 24px; /* Set the size of the cart icon */
+    height: 24px;
+}
+
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #e91e63;
+    color: white;
+    font-size: 12px;
+    border-radius: 50%;
+    padding: 2px 6px;
+    min-width: 18px;
+    text-align: center;
+}
+
 
 
 footer {
